@@ -18,6 +18,7 @@ describe('handle request routes ', () => {
         expect(res.text).toEqual('hello');
       });
   });
+
   it('shows text for the color red', () => {
     return request(app)
       .get('/red')
@@ -25,6 +26,7 @@ describe('handle request routes ', () => {
         expect(res.text).toEqual('<h1>red</h1>');
       }); 
   });
+
   it('shows text for the color green', () => {
     return request(app)
       .get('/green')
@@ -32,6 +34,7 @@ describe('handle request routes ', () => {
         expect(res.text).toEqual('<h1>green</h1>');
       }); 
   });
+  
   it('shows text for the color blue', () => {
     return request(app)
       .get('/blue')
